@@ -5,10 +5,18 @@
 // number of tracks on an album. If the calling line includes a value for the number of tracks, add that value to the 
 // album’s Object. Make at least one new function call that includes the number of tracks on an album.
 
-const album = {
-    name: 'Daniyal Nagori',
-    title: 'Typescript expert',
-    make_album: function() { console.log(this.name + ' ' + this.title); }
-};
 
-album.make_album();
+function make_album(name='', title='', total_track='', release_year='') {
+    album = {
+        artist_name : name,
+        album_title: title
+    };
+    return album;
+}
+
+console.log(make_album('Kerry', 'The Fog1'));
+
+console.log(make_album('Kerry2', 'The Fog2'));
+console.log(make_album('Kerry3', 'The Fog3'));
+
+

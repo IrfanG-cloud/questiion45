@@ -3,17 +3,16 @@
 // with the required information and two other name-value pairs, such as a color or an optional feature. Print the 
 // Object that’s returned to make sure all the information was stored correctly.
 
-var car = {
-    manufacturer: "Ford",
-    model: "Explorer",
-    year: 2008,
-    color: "red",
-    fuel: "gas",
-    mpg: 18
-  }
 
-  function car_information(manufacturer, model) {
- 
+  function car_information(manufacturer, model, ...args) {
+    return {
+      manufacturer: '',
+      model : '',
+      weight: '',
+      color: '',
+
+    }
    
   }
-  car_information();
+ 
+  console.log(car_information('a', 'b', 'c', 'd'));
